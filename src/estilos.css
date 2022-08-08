@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+.principal{
+    padding: 0.1px;
+    @apply max-w-6xl mt-6 flex-col gap-4 max-w-card
+}
+
+.wrapper{
+    @apply flex-row justify-between gap-0 mb-20
+}
+
+.header{
+    @apply text-left flex-col max-w-md
+}
+
+.heading{
+    @apply leading-none font-bold text-very_dark_magenta leading-none text-title
+}
+
+.description{
+    @apply text-paragraph text-paragraph tracking-widest text-lg text-dark_grayish_magenta
+}
+
+.ratings{
+    @apply text-center m-auto font-bold leading-none text-black font-bold text-base
+}
+
+.ratings_card:first-of-type{
+    @apply translate-x-x_m3
+}
+
+.stars{
+    @apply flex justify-center gap-3 text-very_dark_magenta bg-light_grayish_magenta p-3 rounded
+}
+
+.feedbacks{
+    padding: 1em;
+    @apply flex gap-7
+}
+
+.feedback_Card{
+    @apply bg-very_dark_magenta text-white rounded-lg p-8
+}
+
+.feedback_Card:first-of-type{
+    @apply relative bottom-10
+}
+
+.feedback_Card:nth-child(2){
+    @apply relative bottom-5
+}
+
+.customer-details{
+    grid-template-columns: auto 1fr;
+    @apply grid gap-x-5 leading-none m-5 items-center
+}
+
+.customer-img{
+    max-width: 2.33em;
+    @apply row-start-1 row-end-3 rounded-full
+}
+
+h3.customer-name{
+    @apply text-lg font-bold
+}
+
+p.customer-varified{
+    @apply text-lg font-light text-soft_pink
+}
+
+.feedback{
+    line-height: 1.2;
+    letter-spacing: -0.04em;
+    @apply font-normal text-xl
+}
